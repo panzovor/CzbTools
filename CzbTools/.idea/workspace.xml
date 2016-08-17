@@ -67,7 +67,7 @@
       <file leaf-file-name="Preprocess.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/czb/train/attributeExtrator/Preprocess.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="173" column="5" selection-start="7499" selection-end="7499" vertical-scroll-proportion="0.6021314" vertical-offset="2948" max-vertical-offset="3610">
+            <state line="155" column="0" selection-start="6569" selection-end="6569" vertical-scroll-proportion="0.5275311" vertical-offset="2648" max-vertical-offset="3610">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#488#498#0" expanded="true" />
@@ -491,12 +491,12 @@
       <updated>1471412505308</updated>
       <workItem from="1471412513425" duration="3534000" />
       <workItem from="1471417193953" duration="3551000" />
-      <workItem from="1471421974113" duration="100000" />
+      <workItem from="1471421974113" duration="267000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7185000" />
+    <option name="totallyTimeSpent" value="7352000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="2" width="1378" height="733" extended-state="0" />
@@ -666,7 +666,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/czb/train/attributeExtrator/Preprocess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="173" column="5" selection-start="7499" selection-end="7499" vertical-scroll-proportion="0.6021314" vertical-offset="2948" max-vertical-offset="3610">
+        <state line="155" column="0" selection-start="6569" selection-end="6569" vertical-scroll-proportion="0.5275311" vertical-offset="2648" max-vertical-offset="3610">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#488#498#0" expanded="true" />
