@@ -67,7 +67,7 @@
       <file leaf-file-name="Preprocess.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/czb/train/attributeExtrator/Preprocess.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="168" column="68" selection-start="7240" selection-end="7240" vertical-scroll-proportion="0.43339255" vertical-offset="2948" max-vertical-offset="3610">
+            <state line="173" column="5" selection-start="7499" selection-end="7499" vertical-scroll-proportion="0.6021314" vertical-offset="2948" max-vertical-offset="3610">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#488#498#0" expanded="true" />
@@ -92,6 +92,7 @@
         <option value="$PROJECT_DIR$/src/czb/train/weka/Model.java" />
         <option value="$PROJECT_DIR$/src/czb/dataStructure/Table.java" />
         <option value="$PROJECT_DIR$/src/czb/tools/filereader/TxtFileReader.java" />
+        <option value="$PROJECT_DIR$/src/czb/train/attributeExtrator/Preprocess_smpcup.java" />
         <option value="$PROJECT_DIR$/src/czb/train/attributeExtrator/Preprocess.java" />
       </list>
     </option>
@@ -130,8 +131,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -178,8 +177,76 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CzbTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CzbTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="czb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="train" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CzbTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CzbTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="czb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="train" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="attributeExtrator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CzbTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CzbTools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="czb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -424,11 +491,12 @@
       <updated>1471412505308</updated>
       <workItem from="1471412513425" duration="3534000" />
       <workItem from="1471417193953" duration="3551000" />
+      <workItem from="1471421974113" duration="100000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7085000" />
+    <option name="totallyTimeSpent" value="7185000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="2" width="1378" height="733" extended-state="0" />
@@ -478,6 +546,17 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/czb/train/attributeExtrator/Preprocess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="168" column="68" selection-start="7240" selection-end="7240" vertical-scroll-proportion="0.0" vertical-offset="2948" max-vertical-offset="3610">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#488#498#0" expanded="true" />
+            <element signature="e#5628#5644#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/czb/train/attributeExtrator/Preprocess.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="121" column="0" selection-start="4507" selection-end="4507" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="988">
@@ -587,7 +666,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/czb/train/attributeExtrator/Preprocess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="168" column="68" selection-start="7240" selection-end="7240" vertical-scroll-proportion="0.43339255" vertical-offset="2948" max-vertical-offset="3610">
+        <state line="173" column="5" selection-start="7499" selection-end="7499" vertical-scroll-proportion="0.6021314" vertical-offset="2948" max-vertical-offset="3610">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#488#498#0" expanded="true" />
