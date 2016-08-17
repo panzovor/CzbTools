@@ -25,6 +25,9 @@ public class Csv2Arff {
         saver.writeBatch();
     }
 
+    public static void main(String[] args){}
+    
+
 
 
 }
