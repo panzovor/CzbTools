@@ -80,7 +80,7 @@
       <file leaf-file-name="Csv2Arff.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/czb/train/weka/Csv2Arff.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="30" selection-start="216" selection-end="216" vertical-scroll-proportion="0.16435987" vertical-offset="0" max-vertical-offset="589">
+            <state line="28" column="4" selection-start="715" selection-end="715" vertical-scroll-proportion="0.7586806" vertical-offset="0" max-vertical-offset="646">
               <folding />
             </state>
           </provider>
@@ -506,12 +506,12 @@
       <workItem from="1471412513425" duration="3534000" />
       <workItem from="1471417193953" duration="3551000" />
       <workItem from="1471421974113" duration="267000" />
-      <workItem from="1471422443915" duration="178000" />
+      <workItem from="1471422443915" duration="346000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7530000" />
+    <option name="totallyTimeSpent" value="7698000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="2" width="1378" height="733" extended-state="0" />
@@ -696,7 +696,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/czb/train/weka/Csv2Arff.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="30" selection-start="216" selection-end="216" vertical-scroll-proportion="0.16435987" vertical-offset="0" max-vertical-offset="589">
+        <state line="28" column="4" selection-start="715" selection-end="715" vertical-scroll-proportion="0.7586806" vertical-offset="0" max-vertical-offset="646">
           <folding />
         </state>
       </provider>
