@@ -1,6 +1,7 @@
 package czb.train.weka;
 
 import czb.tools.filereader.TxtFileReader;
+import utils.CommonTools;
 import weka.classifiers.Classifier;
 import weka.classifiers.Evaluation;
 import weka.classifiers.trees.RandomForest;
@@ -134,7 +135,7 @@ public class Model {
 
     public void saveResult(String filepath,String content){
         try {
-            txtFileReader.write(filepath,content,"utf-8",false);
+            CommonTools.fileReader.write(filepath, content, "utf-8", false);
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -112,7 +112,7 @@ public class TxtFileReader implements CommonReader{
 							if(i<length){
 								tt[i] = tmp[i];
 							}else{
-								tt[length-1]+= tmp[i];
+								tt[length-1]+= (tmp[i]+" ");
 							}
 							lines.add(tt);
 						}

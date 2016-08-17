@@ -1,6 +1,7 @@
 package czb.dataStructure;
 
 import czb.tools.filereader.TxtFileReader;
+import utils.CommonTools;
 
 import java.io.IOException;
 import java.util.*;
@@ -232,8 +233,8 @@ public class Table {
                     	continue;
                     }
                     else {
-                    	if(content.length ==7)
-                    		System.out.println(printArray(content));
+//                    	if(content.length ==7)
+//                    		System.out.println(printArray(content));
                         tmp[content.length+count] = tmp_right[i];
                         count++;
                     }
@@ -344,7 +345,7 @@ public class Table {
         stringBuffer.append(getTitle(seperator));
         stringBuffer.append(getContent(seperator));
         try {
-            reader.write(file,stringBuffer.toString(),charset,false);
+            CommonTools.fileReader.write(file, stringBuffer.toString(), charset, false);
         } catch (IOException e) {
             e.printStackTrace();
         }
