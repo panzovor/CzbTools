@@ -99,8 +99,6 @@ public class TxtFileReader implements CommonReader{
 			String[] tmp;
 			while ((line = br.readLine()) != null) {
 				if(!line.equals("\n") && !line.trim().equals("")){
-					
-					
 					tmp = line.split(seperator);
 					if(first&& length ==0){
 						length = tmp.length;

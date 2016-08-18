@@ -12,7 +12,7 @@ import java.io.IOException;
  */
 public class Csv2Arff {
 
-    public void csv2arff(String csv,String arff) throws IOException {
+    public static void csv2arff(String csv,String arff) throws IOException {
         CSVLoader loader = new CSVLoader();
         loader.setSource(new File(csv));
         Instances data = loader.getDataSet();
