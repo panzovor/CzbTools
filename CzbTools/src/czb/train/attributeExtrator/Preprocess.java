@@ -82,19 +82,10 @@ public class Preprocess {
             String[] regex = {"http(s)?://[^\\s]*", "\\d{3}-\\d{8}|\\d{4}-\\{7,8}", "\\d{11}"};
             String[] newString = {"", "", ""};
             String content = CommonTools.fileReader.readContent(file);
-            Map<String,String> conver = buildMap();
-            String[] regex_ = {"(辽宁|吉林|黑龙江).+\n", "(河北|山西|内蒙古|北京|天津).+\n", "(山东|江苏|安徽|浙江|台湾|福建|江西|上海).+\n", "(河南|湖北|湖南).+\n", "(广东|广西|海南|香港|澳门).+\n", "(云南|重庆|贵州|四川|西藏).+\n", "(新疆|陕西|宁夏|青海|甘肃).+\n", "((海外|None).+\n)|((海外|None).+)"};
-            String[] newString_ = {"东北\n", "华北\n", "华东\n", "华中\n", "华南\n", "西南\n", "西北\n", "境外\n"};
+
 
             for (int i = 0; i < regex.length; i++) {
                 content = content.replaceAll(regex[i], newString[i]);
-                for(String string : conver.keySet()){
-                    content = content.replace(string,conver.get(string));
-
-                }
-                for (int j= 0; j < regex.length; j++) {
-                    content = content.replaceAll(regex_[j], newString_[j]);
-                }
             }
 
 
@@ -125,7 +116,9 @@ public class Preprocess {
 
     public void preprocess_label_status(String status, String label, String saveStatus, String saveLabel) {
         preprocess_label(label, saveLabel);
+        System.out.print("label complete");
         preprocess_status(status, saveStatus);
+        System.out.print("status complete");
     }
 
     public Table combineLableAndStatus(String labelfile, String statusfile, String savefile) {
@@ -155,8 +148,14 @@ public class Preprocess {
 //        Table result = new Table(file1, charset, ",");
         System.out.println("calculating");
         Map<String, List<String[]>> map = result.buildMap(result.titleMap.get("location"), result.titleMap.get("content"), " ");
+
+        String[] regex_ = {"(辽宁|吉林|黑龙江).+\n", "(河北|山西|内蒙古|北京|天津).+\n", "(山东|江苏|安徽|浙江|台湾|福建|江西|上海).+\n", "(河南|湖北|湖南).+\n", "(广东|广西|海南|香港|澳门).+\n", "(云南|重庆|贵州|四川|西藏).+\n", "(新疆|陕西|宁夏|青海|甘肃).+\n", "((海外|None).+\n)|((海外|None).+)"};
+        String[] newString_ = {"东北\n", "华北\n", "华东\n", "华中\n", "华南\n", "西南\n", "西北\n", "境外\n"};
+        Map<String,String> conver = buildMap();
+
         List<String[]> tmp = result.converMap2List(map);
-        tfidf.tfidf(tmp);
+//        tfidf.tfidf(tmp);
+        tfidf.tfidf(tmp,conver,regex_,newString_);
         tfidf.getTf();
         tfidf.getIdf();
         tfidf.getWordBag();

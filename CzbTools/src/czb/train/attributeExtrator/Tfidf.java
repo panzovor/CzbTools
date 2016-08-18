@@ -43,14 +43,14 @@ public class Tfidf {
         this.idf = idf;
     }
 
-    public void tfidf(List<String[]> datas){
+     public void tfidf(List<String[]> datas){
         int i=0;
         Set<String> appeace = new HashSet<String>();
         for(String[] data: datas){
             for(String word:data){
-            	if(word.trim().equals("")){
-            		continue;
-            	}
+                if(word.trim().equals("")){
+                    continue;
+                }
                 if(wordBag.containsKey(word)){
                     int tmp = tf.get(i);
                     tf.put(i,++tmp);
@@ -75,6 +75,48 @@ public class Tfidf {
         getTfidf();
 //        System.out.println(tfidfToString(tfidf));
     }
+
+
+    public void tfidf(List<String[]> datas,Map<String,String> converMap,String [] regex, String[] replacement){
+        int i=0;
+        Set<String> appeace = new HashSet<String>();
+        for(String[] data: datas){
+            for(String word:data){
+                if(converMap.containsKey(word)){
+                    word = converMap.get(word);
+                    for(int k=0;k< regex.length;k++){
+                        word = word.replaceAll(regex[k],replacement[k]);
+                    }
+                }
+                if(word.trim().equals("")){
+                    continue;
+                }
+                if(wordBag.containsKey(word)){
+                    int tmp = tf.get(i);
+                    tf.put(i,++tmp);
+                }else{
+                    i++;
+                    wordBag.put(word,i);
+                    tf.put(i,1);
+                }
+                if(!idf.containsKey(word)){
+                    idf.put(wordBag.get(word),1.0);
+                }else if(!appeace.contains(word)){
+                    double tmmp = idf.get(wordBag.get(word));
+                    idf.put(wordBag.get(word),++tmmp);
+                }
+                appeace.add(word);
+            }
+            appeace.clear();
+        }
+        for(Integer index : idf.keySet()){
+            idf.put(index,Math.abs(Math.log((double) datas.size() / idf.get(index))));
+        }
+        getTfidf();
+//        System.out.println(tfidfToString(tfidf));
+    }
+
+
 
     public void clear(){
         wordBag.clear();

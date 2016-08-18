@@ -67,9 +67,10 @@
       <file leaf-file-name="Preprocess.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/czb/train/attributeExtrator/Preprocess.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="265" column="64" selection-start="37433" selection-end="37433" vertical-scroll-proportion="8.706927" vertical-offset="133" max-vertical-offset="5795">
+            <state line="155" column="39" selection-start="32564" selection-end="32564" vertical-scroll-proportion="0.38757396" vertical-offset="2814" max-vertical-offset="5776">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#27182#27198#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,7 +79,7 @@
       <file leaf-file-name="Csv2Arff.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/czb/train/weka/Csv2Arff.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="741">
+            <state line="17" column="0" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0" vertical-offset="40" max-vertical-offset="646">
               <folding />
             </state>
           </provider>
@@ -87,8 +88,14 @@
       <file leaf-file-name="Tfidf.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/czb/train/attributeExtrator/Tfidf.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="149" column="4" selection-start="4399" selection-end="4715" vertical-scroll-proportion="0.0" vertical-offset="2831" max-vertical-offset="3458">
-              <folding />
+            <state line="79" column="21" selection-start="2130" selection-end="2135" vertical-scroll-proportion="0.0" vertical-offset="1142" max-vertical-offset="3952">
+              <folding>
+                <element signature="e#271#288#0" expanded="true" />
+                <element signature="e#413#430#0" expanded="true" />
+                <element signature="e#484#500#0" expanded="true" />
+                <element signature="e#1085#1093#0" expanded="true" />
+                <element signature="e#2284#2292#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -133,10 +140,10 @@
         <option value="$PROJECT_DIR$/src/czb/train/weka/Model.java" />
         <option value="$PROJECT_DIR$/src/czb/train/attributeExtrator/Preprocess_smpcup.java" />
         <option value="$PROJECT_DIR$/src/czb/tools/filereader/TxtFileReader.java" />
-        <option value="$PROJECT_DIR$/src/czb/train/attributeExtrator/Tfidf.java" />
         <option value="$PROJECT_DIR$/src/utils/CommonTools.java" />
         <option value="$PROJECT_DIR$/src/czb/train/weka/Csv2Arff.java" />
         <option value="$PROJECT_DIR$/src/czb/dataStructure/Table.java" />
+        <option value="$PROJECT_DIR$/src/czb/train/attributeExtrator/Tfidf.java" />
         <option value="$PROJECT_DIR$/src/czb/train/attributeExtrator/Preprocess.java" />
       </list>
     </option>
@@ -241,8 +248,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -530,15 +537,16 @@
       <workItem from="1471422443915" duration="346000" />
       <workItem from="1471486632314" duration="17532000" />
       <workItem from="1471509825783" duration="18000" />
+      <workItem from="1471511021694" duration="2404000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25662000" />
+    <option name="totallyTimeSpent" value="28066000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="2" width="1378" height="733" extended-state="0" />
-    <editor active="false" />
+    <frame x="-7" y="2" width="1378" height="733" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -553,19 +561,19 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -594,6 +602,7 @@
         <state line="265" column="64" selection-start="37433" selection-end="37433" vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="5795">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#27182#27198#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -608,7 +617,64 @@
     <entry file="file://$PROJECT_DIR$/src/czb/train/attributeExtrator/Tfidf.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="149" column="4" selection-start="4399" selection-end="4715" vertical-scroll-proportion="0.0" vertical-offset="2831" max-vertical-offset="3458">
+          <folding>
+            <element signature="e#271#288#0" expanded="true" />
+            <element signature="e#413#430#0" expanded="true" />
+            <element signature="e#484#500#0" expanded="true" />
+            <element signature="e#1085#1093#0" expanded="true" />
+            <element signature="e#2284#2292#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/CommonTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="38" selection-start="240" selection-end="253" vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="1824">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/czb/dataStructure/Table.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="220" column="13" selection-start="7095" selection-end="7095" vertical-scroll-proportion="0.0" vertical-offset="4180" max-vertical-offset="9234">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/czb/tools/filereader/TxtFileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="42" selection-start="3670" selection-end="3670" vertical-scroll-proportion="0.0" vertical-offset="2014" max-vertical-offset="5225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/czb/train/attributeExtrator/Preprocess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="265" column="64" selection-start="37433" selection-end="37433" vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="5795">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#27182#27198#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/czb/train/weka/Csv2Arff.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="741">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/czb/train/attributeExtrator/Tfidf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="149" column="4" selection-start="4399" selection-end="4715" vertical-scroll-proportion="0.0" vertical-offset="2831" max-vertical-offset="3458">
+          <folding>
+            <element signature="e#271#288#0" expanded="true" />
+            <element signature="e#413#430#0" expanded="true" />
+            <element signature="e#484#500#0" expanded="true" />
+            <element signature="e#1085#1093#0" expanded="true" />
+            <element signature="e#2284#2292#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -638,6 +704,7 @@
         <state line="155" column="0" selection-start="6569" selection-end="6569" vertical-scroll-proportion="0.0" vertical-offset="2648" max-vertical-offset="3610">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#27182#27198#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -654,6 +721,7 @@
         <state line="155" column="0" selection-start="6569" selection-end="6569" vertical-scroll-proportion="0.0" vertical-offset="2648" max-vertical-offset="3610">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#27182#27198#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -663,6 +731,7 @@
         <state line="168" column="68" selection-start="7240" selection-end="7240" vertical-scroll-proportion="0.0" vertical-offset="2948" max-vertical-offset="3610">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#27182#27198#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -672,6 +741,7 @@
         <state line="121" column="0" selection-start="4507" selection-end="4507" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="988">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#27182#27198#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -686,7 +756,13 @@
     <entry file="file://$PROJECT_DIR$/src/czb/train/attributeExtrator/Tfidf.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="132" column="55" selection-start="3914" selection-end="3914" vertical-scroll-proportion="0.0" vertical-offset="2508" max-vertical-offset="3116">
-          <folding />
+          <folding>
+            <element signature="e#271#288#0" expanded="true" />
+            <element signature="e#413#430#0" expanded="true" />
+            <element signature="e#484#500#0" expanded="true" />
+            <element signature="e#1085#1093#0" expanded="true" />
+            <element signature="e#2284#2292#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -695,11 +771,6 @@
         <state line="41" column="31" selection-start="1436" selection-end="1436" vertical-scroll-proportion="0.0" vertical-offset="336" max-vertical-offset="1026">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Softwares/java/jdk/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="19" selection-start="3598" selection-end="3624" vertical-scroll-proportion="0.3321492" vertical-offset="1238" max-vertical-offset="59641" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/czb/train/weka/Parmeter.java">
@@ -715,13 +786,6 @@
     <entry file="file://$PROJECT_DIR$/src/czb/train/weka/Model.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="137" column="36" selection-start="4503" selection-end="4503" vertical-scroll-proportion="0.0" vertical-offset="2065" max-vertical-offset="2812" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/czb/train/attributeExtrator/Tfidf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="4" selection-start="4399" selection-end="4715" vertical-scroll-proportion="0.0" vertical-offset="2173" max-vertical-offset="2926">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/CommonTools.java">
@@ -745,6 +809,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://D:/Softwares/java/jdk/src.zip!/java/util/regex/Matcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="960" column="19" selection-start="36606" selection-end="36610" vertical-scroll-proportion="0.9719101" vertical-offset="17457" max-vertical-offset="24738">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Softwares/java/jdk/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2221" column="18" selection-start="86417" selection-end="86417" vertical-scroll-proportion="0.33150685" vertical-offset="41413" max-vertical-offset="59641">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/czb/train/weka/Csv2Arff.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="646">
@@ -752,11 +830,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/czb/train/attributeExtrator/Tfidf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="21" selection-start="2130" selection-end="2135" vertical-scroll-proportion="0.0" vertical-offset="1142" max-vertical-offset="3952">
+          <folding>
+            <element signature="e#271#288#0" expanded="true" />
+            <element signature="e#413#430#0" expanded="true" />
+            <element signature="e#484#500#0" expanded="true" />
+            <element signature="e#1085#1093#0" expanded="true" />
+            <element signature="e#2284#2292#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/czb/train/attributeExtrator/Preprocess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="265" column="64" selection-start="37433" selection-end="37433" vertical-scroll-proportion="8.706927" vertical-offset="133" max-vertical-offset="5795">
+        <state line="155" column="39" selection-start="32564" selection-end="32564" vertical-scroll-proportion="0.38757396" vertical-offset="2814" max-vertical-offset="5776">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#27182#27198#0" expanded="true" />
           </folding>
         </state>
       </provider>
