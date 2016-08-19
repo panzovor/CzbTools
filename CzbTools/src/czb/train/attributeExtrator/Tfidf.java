@@ -17,7 +17,7 @@ public class Tfidf {
 
     private Map<Integer,Double> idf = new HashMap<Integer, Double>();
 
-    private Map<String,Double> tfidf = new HashMap<String, Double>();
+    public Map<String,Double> tfidf = new HashMap<String, Double>();
 
     public Map<String, Integer> getWordBag() {
         return wordBag;
@@ -43,14 +43,14 @@ public class Tfidf {
         this.idf = idf;
     }
 
-    public void tfidf(List<String[]> datas){
+     public void tfidf(List<String[]> datas){
         int i=0;
         Set<String> appeace = new HashSet<String>();
         for(String[] data: datas){
             for(String word:data){
-            	if(word.trim().equals("")){
-            		continue;
-            	}
+                if(word.trim().equals("")){
+                    continue;
+                }
                 if(wordBag.containsKey(word)){
                     int tmp = tf.get(i);
                     tf.put(i,++tmp);
@@ -73,7 +73,50 @@ public class Tfidf {
             idf.put(index,Math.abs(Math.log((double) datas.size() / idf.get(index))));
         }
         getTfidf();
+//        System.out.println(tfidfToString(tfidf));
     }
+
+
+    public void tfidf(List<String[]> datas,Map<String,String> converMap,String [] regex, String[] replacement){
+        int i=0;
+        Set<String> appeace = new HashSet<String>();
+        for(String[] data: datas){
+            for(String word:data){
+                if(converMap.containsKey(word)){
+                    word = converMap.get(word);
+                    for(int k=0;k< regex.length;k++){
+                        word = word.replaceAll(regex[k],replacement[k]);
+                    }
+                }
+                if(word.trim().equals("")){
+                    continue;
+                }
+                if(wordBag.containsKey(word)){
+                    int tmp = tf.get(i);
+                    tf.put(i,++tmp);
+                }else{
+                    i++;
+                    wordBag.put(word,i);
+                    tf.put(i,1);
+                }
+                if(!idf.containsKey(word)){
+                    idf.put(wordBag.get(word),1.0);
+                }else if(!appeace.contains(word)){
+                    double tmmp = idf.get(wordBag.get(word));
+                    idf.put(wordBag.get(word),++tmmp);
+                }
+                appeace.add(word);
+            }
+            appeace.clear();
+        }
+        for(Integer index : idf.keySet()){
+            idf.put(index,Math.abs(Math.log((double) datas.size() / idf.get(index))));
+        }
+        getTfidf();
+//        System.out.println(tfidfToString(tfidf));
+    }
+
+
 
     public void clear(){
         wordBag.clear();
@@ -101,15 +144,32 @@ public class Tfidf {
     private Map<String,Double> getTfidf(){
         tfidf = new HashMap<String, Double>();
         for(String string: wordBag.keySet()){
-            tfidf.put(string,tf.get(wordBag.get(string))*idf.get(wordBag.get(string)));
+            double tmp = tf.get(wordBag.get(string))*idf.get(wordBag.get(string));
+//            System.out.println(string+" "+tmp);
+            tfidf.put(string,tmp);
         }
+        tfidf = CommonTools.sortMap(tfidf);
         return tfidf;
     }
 
     public Map<String,Double> tfidfFilter(int minTf,double mintfidf){
         Map<String,Double> tfidf = getTfidf();
         for(String string : wordBag.keySet()){
-            if(tf.get(wordBag.get(string))< minTf && tfidf.get(string)<mintfidf){
+            if(minTf >0 ){
+                if(tf.get(wordBag.get(string))< minTf && tfidf.get(string)<mintfidf){
+                    if(tfidf.containsKey(string)){
+                        tfidf.remove(string);
+                    }
+                }
+            }
+        }
+        return tfidf;
+    }
+
+    public Map<String,Double> tfFilter(int minTf){
+        Map<String,Double> tfidf = getTfidf();
+        for(String string : wordBag.keySet()){
+            if(tf.get(wordBag.get(string))< minTf){
                 if(tfidf.containsKey(string)){
                     tfidf.remove(string);
                 }
@@ -133,7 +193,7 @@ public class Tfidf {
         StringBuffer stringBuffer = new StringBuffer();
         for(String string : map.keySet() ){
                 stringBuffer.append(string+",");
-                stringBuffer.append(tfidf.get(wordBag.get(string))+"\n");
+                stringBuffer.append(map.get(string)+"\n");
         }
         return stringBuffer.toString();
     }

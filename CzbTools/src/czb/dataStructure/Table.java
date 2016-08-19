@@ -216,6 +216,10 @@ public class Table {
         
 //        System.out.println(rightTable.size());
         for(String[] content: left.getTableContent()){
+            if(!rightTable.keySet().contains(content[combineIndex1])){
+                continue;
+            }
+
             String [] tmp = new String[title.length];
             for(int i =0;i< content.length;i++){
                 tmp[i] = content[i];
@@ -223,9 +227,10 @@ public class Table {
             String[] tmp_right = rightTable.get(tmp[combineIndex1]);
             if(tmp_right == null){
             	int count=0;
-                for(int i=0;i< tmp_right.length-1;i++,count++){
-                    tmp[content.length+count] = "null";
+                for(int i=0;i< right.tableTitle.length-2;i++,count++){
+                    tmp[content.length+count] = "null,";
                 }
+                tmp[tmp.length-1] = "null\n";
             }else{
             	int count=0;
                 for(int i=0;i< tmp_right.length;i++){
@@ -321,6 +326,7 @@ public class Table {
         for(String string: tableTitle){
             stringBuffer.append(string+seperator);
         }
+        stringBuffer.deleteCharAt(stringBuffer.length()-1);
         return stringBuffer.toString();
     }
 
@@ -334,6 +340,7 @@ public class Table {
             for(String string : strings){
                 stringBuffer.append(string+seperator);
             }
+            stringBuffer.deleteCharAt(stringBuffer.length()-1);
             stringBuffer.append("/n");
         }
         return stringBuffer.toString();
@@ -342,7 +349,7 @@ public class Table {
     public void saveTable(String file,String charset){
         String seperator = ",";
         StringBuffer stringBuffer = new StringBuffer();
-        stringBuffer.append(getTitle(seperator));
+        stringBuffer.append(getTitle(seperator)+"\n");
         stringBuffer.append(getContent(seperator));
         try {
             CommonTools.fileReader.write(file, stringBuffer.toString(), charset, false);
@@ -353,7 +360,8 @@ public class Table {
 
     public void buildTable_withTitle(String file,String charset,String seperator){
         try {
-            List<String[]> list= reader.readWordsWithSeperatorWithLength(file,seperator,charset,tableTitle.length);
+            List<String[]> list= reader.readWordsWithSeperatorWithLength(file,seperator,charset,0);
+            System.out.println(list.size());
             setTableTitle(list.get(0));
             list.remove(0);
             setTableContent(list);
